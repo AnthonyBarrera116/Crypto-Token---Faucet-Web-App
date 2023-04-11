@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+// Imports
 import './App.css';
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import abi from "./utils/Faucet.json";
 
 
-
+// App
 function App() {
+
+  // const holders for faucet page
   const [walletAddress, setWalletAddress] = useState("");
   const [signer, setSigner] = useState();
   const [fcContract, setFcContract] = useState();
@@ -15,84 +17,162 @@ function App() {
   const [transactionData, setTransactionData] = useState("");
   const contractABI = abi.abi;
 
+  // Checks wallet and gets current wallet
   useEffect(() => {
     getCurrentWalletConnected();
     addWalletListener();
   }, [walletAddress]);
 
+
+  // connects wallet
   const connectWallet = async () => {
+
+
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
       try {
-        /* get provider */
+
+        // gets provider
         const provider = new ethers.providers.Web3Provider(window.ethereum);
-        /* get accounts */
+        
+        // gets Accounts
         const accounts = await provider.send("eth_requestAccounts", []);
-        /* get signer */
+        
+        // gets Signer
         setSigner(provider.getSigner());
-        /* local contract instance */
+
+        // connects to contract address facuet
         setFcContract( new ethers.Contract("0xC2ffc2F6E316CE12eA7ED2A4ce666171A312895d",contractABI,provider));
-        /* set active wallet address */
+        
+        // Set active wallet
         setWalletAddress(accounts[0]);
-      } catch (err) {
+
+      } 
+      
+      catch (err) {
+
         console.error(err.message);
+
       }
-    } else {
-      /* MetaMask is not installed */
+
+    } 
+    
+    else {
+
+      // Metamask not insatlled
       console.log("Please install MetaMask");
+
     }
+
   };
 
+  // Gets current wallet
   const getCurrentWalletConnected = async () => {
+
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+
       try {
-        /* get provider */
+
+        // gets provider in window ethrum
         const provider = new ethers.providers.Web3Provider(window.ethereum);
-        /* get accounts */
+
+        // gets Account
         const accounts = await provider.send("eth_accounts", []);
+
         if (accounts.length > 0) {
-          /* get signer */
+
+          // gets Signer
           setSigner(provider.getSigner());
-          /* local contract instance */
+
+          // connects to contract address facuet
           setFcContract(new ethers.Contract("0xC2ffc2F6E316CE12eA7ED2A4ce666171A312895d",contractABI,provider));
-          /* set active wallet address */
+
+          // Set active wallet
           setWalletAddress(accounts[0]);
-        } else {
+        } 
+        
+        else {
+
+          // Connnect Metamask
           console.log("Connect to MetaMask using the Connect Wallet button");
+
         }
-      } catch (err) {
+
+      } 
+      
+      catch (err) {
+
         console.error(err.message);
+
       }
-    } else {
-      /* MetaMask is not installed */
+
+    } 
+    
+    else {
+
+      // Metamask not installed
       console.log("Please install MetaMask");
+
     }
   };
 
+  // Wallet listner
   const addWalletListener = async () => {
+
+    // Window ethrum
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+      
       window.ethereum.on("accountsChanged", (accounts) => {
+
         setWalletAddress(accounts[0]);
+
       });
-    } else {
-      /* MetaMask is not installed */
+
+    } 
+
+    else {
+
+      // Metamask not installed
+
       setWalletAddress("");
+
       console.log("Please install MetaMask");
+
     }
+
   };
 
+  // Requesting of Token
   const reqTok = async () => {
+
+    // Error blank and success
     setWithdrawError("");
     setWithdrawSuccess("");
+
     try {
+
+      // connects signer your wallat
       const fcContractWithSigner = fcContract.connect(signer);
+
+      // Calls faucet contract to request tokens
       const resp = await fcContractWithSigner.requestTokens();
+
+      // For sucess
       setWithdrawSuccess("Operation succeeded - enjoy your tokens!");
+     
+      // hash transaction data
       setTransactionData(resp.hash);
-    } catch (err) {
+    } 
+    
+    catch (err) {
+
+      // error message to error
       setWithdrawError(err.message);
+
     }
+
   };
 
+  // Page
   return (
     <div>
       <nav className="navbar">
