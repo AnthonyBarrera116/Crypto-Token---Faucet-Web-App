@@ -41,7 +41,7 @@ function App() {
         setSigner(provider.getSigner());
 
         // connects to contract address facuet
-        setFcContract( new ethers.Contract("0xC2ffc2F6E316CE12eA7ED2A4ce666171A312895d",contractABI,provider));
+        setFcContract( new ethers.Contract("0xc83CB6FefdAD857d1748D673C7495B01a5987fD9",contractABI,provider));
         
         // Set active wallet
         setWalletAddress(accounts[0]);
@@ -84,7 +84,7 @@ function App() {
           setSigner(provider.getSigner());
 
           // connects to contract address facuet
-          setFcContract(new ethers.Contract("0xC2ffc2F6E316CE12eA7ED2A4ce666171A312895d",contractABI,provider));
+          setFcContract(new ethers.Contract("0xc83CB6FefdAD857d1748D673C7495B01a5987fD9",contractABI,provider));
 
           // Set active wallet
           setWalletAddress(accounts[0]);
