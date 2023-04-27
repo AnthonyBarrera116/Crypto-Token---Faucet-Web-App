@@ -70,6 +70,14 @@ contract CollegeToken is ERC20Capped,ERC20Burnable{
 
     }
 
+    function airDrop(address [] calldata holder) public onlyOwner{
+        require(msg.sender == owner, "Only the contract owner can call this function");
+        for(uint256 i = 0; i < holder.length; i++){
+            _mint(holder[i], 5);
+        }
+
+    }
+
     // never used but found out it's good practice if needed to 
     function destroy() public onlyOwner{
 
