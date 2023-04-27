@@ -6,7 +6,7 @@ async function main() {
 
   // deploy contract facuet from owner who holds all coin
   const Faucet = await hre.ethers.getContractFactory("Faucet");
-  const faucet = await Faucet.deploy("0xa4aEcA84Aa71352FB80F4bB55f2F6A54B8f38605");
+  const faucet = await Faucet.deploy("0x9766c36e97cf634d71B9082002E90dDA6cD39C2d");
 
   await faucet.deployed();
 

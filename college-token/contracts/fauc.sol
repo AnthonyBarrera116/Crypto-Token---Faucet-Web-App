@@ -90,7 +90,7 @@ contract Faucet {
     }
 
     // chnage lock time
-    function setLockTime(uint256 amount) public onlyOwner {
+    function lockTimeUser(uint256 amount) public onlyOwner {
 
         lockTime = amount * 1 minutes;
 
