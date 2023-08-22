@@ -61,9 +61,9 @@ Sepolia faucet: https://sepoliafaucet.com/
 
 TestNet contract look up: https://sepolia.etherscan.io/
 
-https://sepolia.etherscan.io/token/0x839B02692fd2cBffb2D4a0D4d03f623A08D510ae 0x839B02692fd2cBffb2D4a0D4d03f623A08D510ae- Contract Deployed
+https://sepolia.etherscan.io/token/0x5343fE556880114f2F849e14C934B46508F8f254 0x5343fE556880114f2F849e14C934B46508F8f254- Contract Deployed
 
-https://sepolia.etherscan.io/token/0x9f926D626548c943fF444C681b39f66c2F6E60d7
-0x9f926D626548c943fF444C681b39f66c2F6E60d7 - Faucet
+https://sepolia.etherscan.io/token/0xBAF9db9df4e33C28B665f4F4f47536894Ff1E55e
+0xBAF9db9df4e33C28B665f4F4f47536894Ff1E55e - Faucet
 
 API web: https://app.infura.io/
