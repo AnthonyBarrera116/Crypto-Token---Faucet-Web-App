@@ -67,3 +67,5 @@ https://sepolia.etherscan.io/token/0xBAF9db9df4e33C28B665f4F4f47536894Ff1E55e
 0xBAF9db9df4e33C28B665f4F4f47536894Ff1E55e - Faucet
 
 API web: https://app.infura.io/
+
+faucet page: https://anthonybarrera116.github.io/Crypto-Token---Faucet-Web-App/
