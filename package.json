@@ -1,7 +1,7 @@
 {
   "name": "class-example-frontend-final",
   "version": "0.1.0",
-  "homepage": "http://AnthonyBarrera116.github.io/Coin",
+  "homepage": "https://github.com/AnthonyBarrera116/Crypto-Token---Faucet-Web-App",
   "private": true,
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
