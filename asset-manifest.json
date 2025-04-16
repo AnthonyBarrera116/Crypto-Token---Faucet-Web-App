@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/css/main.dc04fd5a.css",
-    "main.js": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/js/main.f146ee1f.js",
-    "static/js/787.b90b8980.chunk.js": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js",
-    "static/media/green.jpg": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/media/green.df8058c66bda43c4f204.jpg",
-    "index.html": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/index.html",
-    "main.dc04fd5a.css.map": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/css/main.dc04fd5a.css.map",
-    "main.f146ee1f.js.map": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/js/main.f146ee1f.js.map",
-    "787.b90b8980.chunk.js.map": "/AnthonyBarrera116/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js.map"
+    "main.css": "/Crypto-Token---Faucet-Web-App/static/css/main.ac9bbb9b.css",
+    "main.js": "/Crypto-Token---Faucet-Web-App/static/js/main.45be109c.js",
+    "static/js/787.b90b8980.chunk.js": "/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js",
+    "static/media/green.jpg": "/Crypto-Token---Faucet-Web-App/static/media/green.df8058c66bda43c4f204.jpg",
+    "index.html": "/Crypto-Token---Faucet-Web-App/index.html",
+    "main.ac9bbb9b.css.map": "/Crypto-Token---Faucet-Web-App/static/css/main.ac9bbb9b.css.map",
+    "main.45be109c.js.map": "/Crypto-Token---Faucet-Web-App/static/js/main.45be109c.js.map",
+    "787.b90b8980.chunk.js.map": "/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc04fd5a.css",
-    "static/js/main.f146ee1f.js"
+    "static/css/main.ac9bbb9b.css",
+    "static/js/main.45be109c.js"
   ]
 }
