@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Coin/static/css/main.73269e99.css",
-    "main.js": "/Coin/static/js/main.e81539d2.js",
-    "static/js/787.b90b8980.chunk.js": "/Coin/static/js/787.b90b8980.chunk.js",
-    "static/media/green.jpg": "/Coin/static/media/green.df8058c66bda43c4f204.jpg",
-    "index.html": "/Coin/index.html",
-    "main.73269e99.css.map": "/Coin/static/css/main.73269e99.css.map",
-    "main.e81539d2.js.map": "/Coin/static/js/main.e81539d2.js.map",
-    "787.b90b8980.chunk.js.map": "/Coin/static/js/787.b90b8980.chunk.js.map"
+    "main.css": "/Crypto-Token---Faucet-Web-App/static/css/main.ac9bbb9b.css",
+    "main.js": "/Crypto-Token---Faucet-Web-App/static/js/main.45be109c.js",
+    "static/js/787.b90b8980.chunk.js": "/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js",
+    "static/media/green.jpg": "/Crypto-Token---Faucet-Web-App/static/media/green.df8058c66bda43c4f204.jpg",
+    "index.html": "/Crypto-Token---Faucet-Web-App/index.html",
+    "main.ac9bbb9b.css.map": "/Crypto-Token---Faucet-Web-App/static/css/main.ac9bbb9b.css.map",
+    "main.45be109c.js.map": "/Crypto-Token---Faucet-Web-App/static/js/main.45be109c.js.map",
+    "787.b90b8980.chunk.js.map": "/Crypto-Token---Faucet-Web-App/static/js/787.b90b8980.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73269e99.css",
-    "static/js/main.e81539d2.js"
+    "static/css/main.ac9bbb9b.css",
+    "static/js/main.45be109c.js"
   ]
 }
